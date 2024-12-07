@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<div class="container">
+<h2 class="mb-3">Random API</h2>
+    <button class="btn btn-outline-danger mb-1" onclick="eliminarUsuarios()">Eliminar Usuarios</button>
+    <hr />
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered table-striped table-hover h-100">
+                <thead>
+                    <tr>
+                        <td>Foto</td>
+                        <td>Nombre</td>
+                        <td>Correo</td>
+                        <td>Fecha de Nacimiento</td>
+                        <td>Direccion</td>
+                    </tr>
+                </thead>
+                <tbody id="tBody" class="toast-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+<script src="~/Scripts/APIJS/api.js"></script>
